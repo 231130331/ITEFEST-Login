@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="container">
+    <nav class="nav">
+        <ul class="item">
+            <img class="bendera" src="bendera.png" alt="bendera">
+            <li><span class="hapus">Bahasa </span>Indonesia</a></li>
+            <li><a href="harga">Harga</a></li>
+            <li ><a href="fitur">Fitur</a></li>
+            <img class="bottom" src="down.png" alt="down">
+            <li><a href="help">Help <span class="hapus">Center</span></a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="kiri">
+            <article class="logo">
+                <img src="logo.png"> 
+                <span class="merek">E-UMKM</span>
+            </article>
+            <article>
+                <span class="signin">Sign in your account with</span>
+            </article>
+            <article class="size">
+                <div class="google">
+                    <img class="posisi" src="google.png"> 
+                    <span class="kata">Continue With Google</span>
+                </div>
+            </article>
+            <article class="size" >
+                <div class="facebook">
+                    <img class="posisi" src="facebook.png">
+                    <span class="kata">Continue With Facebook</span>
+                </div>
+            </article>
+        </section>
+        <section class="kanan">
+            <article class="latarbelakang">
+                <div class="close">
+                    <img src="icon close.png">
+                </div>
+                <div class="login">
+                    <p class="textlogin"><b>Login</b></p>
+                </div>
+                <div class="bagianinput">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+                <div class="remember">
+                    <span><input type="checkbox">Remember Me</span>
+                    <a href="#">Forget Your Password?</a>
+                </div>
+                <div class="kirimlogin">
+                    <button id="button" type="submit">Login</button>
+                </div>
+                <script>
+                    document.getElementById("button").addEventListener("click", function(event){
+                        var email = document.getElementById("email").value; 
+                        var password = document.getElementById("password").value;
+                        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        
+                        if (email == ""){
+                            alert("tolong masukkan email anda");
+                            return;
+                        }
+                        else if (!emailPattern.test(email)){
+                            alert("masukkan email dengan benar.");
+                            return;
+                        }
+                        else if (password == "") {
+                            alert ("tolong masukkan password anda");
+                            return;
+                        }
+                        else if (password.length < 6 || password.length > 16) {
+                            alert("password harus terdiri dari 6 sampai 16 karakter.");
+                            return;
+                        }
+                        else {
+                            console.log("login berhasil!");
+                            location.replace("Bahan CSS/Userhomepage/userhomepage.html");
+                        }
+                    });
+                </script>
+                <div class="signup">
+                    <p>Don`t have an account? <a href="#">Sign up</a></p>
+                </div>
+                <div class="akun">
+                    <div class="akun">
+                    <div class="google">
+                        <img class="posisi" src="google.png"> 
+                    </div>
+                    <div class="facebook">
+                        <img class="posisi" src="facebook.png">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

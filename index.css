@@ -1,0 +1,429 @@
+.container{
+    width: 1440px;
+    font-family: 'inter', sans-serif;
+}
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+}
+.nav{
+    width: 100%;
+    height: 100px; 
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+    transition: width 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+.nav .item {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav .item li {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+.nav .item .bendera {
+    width: 26px;
+    height: 26px;
+}
+.nav .item .bottom {
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 1200px) {
+    .nav .item li {
+        margin-left: 18px;
+        font-size: 18px;
+    }
+    .nav .item .box {
+        width: 43%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav .item li {
+        margin-left: 14px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        height: 60px;
+    }
+    .nav .item li {
+        font-size: 15px;
+    }
+    .nav .item {
+        padding: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .nav .item .bottom {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        width: 100%;
+    }
+    .nav .hapus {
+        display: none;
+    }
+    .nav .item li {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+    .nav .item .bottom {
+        margin-left: 5px;
+        width: 18px;
+        height: 18px;
+    }
+}
+.main {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    display: flex;
+    z-index: 9998;
+}
+.main .kiri{
+    height: 678px;
+    width: 40%;
+    padding: 0 5%;
+    background-color: #212A31;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .kiri article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main .kiri .logo {
+    width: 100%;
+}
+.kiri .logo img{
+    width: 28%;
+    height: 8vw;
+    margin-right: 30px;
+}
+.kiri span{
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+.kiri .size span {
+    color: black;
+}
+.kiri .logo .merek {
+    color: #E0D0FB;
+}
+.kiri .signin{
+    width: 100%;
+    margin: 10px 0;
+}
+.kiri .google{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+}
+.kiri .size div img{
+    width: 12%;
+    height: 4.3vw;
+}
+.kiri .facebook{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+}
+article .posisi {
+    margin: 0 20px;
+}
+.kiri .google:hover {
+    background-color: antiquewhite;
+}
+.kiri .facebook:hover {
+    background-color: antiquewhite;
+}
+@media (max-width: 1200px) {
+    .kiri span{
+        font-size: 26px;
+    }
+    .kiri .merek {
+        font-size: 28px;
+    }
+}
+@media (max-width: 992px) {
+    .kiri span{
+        font-size: 22px;
+    }
+    .kiri .merek {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .main .kiri {
+        display: none;
+    }
+}
+.kanan{
+    width: 50%;
+    background-color: #748D92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kanan .latarbelakang{
+    background-color: white;
+    width: 70%;
+    height: 550px;
+    border-radius: 15px;
+}
+.kanan .close{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kanan .close img{
+    width: 20px;
+    height: 20px;
+}
+.kanan .login {
+    padding-top: 40px;
+    margin: 40px 0;
+}
+.kanan .textlogin{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    width: 100%;
+}
+.kanan .bagianinput{
+    text-align: center;
+}
+
+.kanan .bagianinput input{
+    font-size: 20px;
+    margin: 15px 0;
+    width: 80%;
+    height: 40px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid black;
+}
+.kanan .remember{
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+.kanan .remember span {
+    width: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.kanan .remember a{
+    text-decoration: none;
+    color: blue;
+}
+.kanan .kirimlogin{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.kanan .kirimlogin button{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.kanan .signup {
+    text-align: center;
+}
+.kanan .signup a{
+    text-decoration: none;
+    color: blue;
+}
+
+.kanan span {
+    font-size: 20px;
+}
+.kanan .akun {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.kanan .google{
+    display: none;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
+}
+.kanan .facebook{
+    display: none;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
+}
+.kanan .akun div img{
+    width: 10%;
+    height: 6vw;
+}
+@media (max-width: 1200px) {
+    .kanan .remember{
+        font-size: 12px;
+    }
+    .kanan .latarbelakang{
+        width: 80%;
+    }
+    .kanan .remember span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .kanan .latarbelakang{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        top: 60px;
+    }
+    .kanan .google span,
+    .kanan .facebook span{
+        display: none;
+    }
+    .kanan{
+        width: 75%;
+        height: 635px;
+        background-color: #212a31;
+        display: flex;
+        padding: 35px 15%;
+    }
+    .kanan .latarbelakang{
+        height: 100%;
+        width: 100%;
+    }
+    .kanan .google{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: white;
+        height: 50px;
+        width: 28%;
+        margin-right: 20px;
+        border: 1px solid #212A31;
+    }
+    .kanan .facebook{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: white;
+        border:  1px solid #212A31;
+        height: 50px;
+        width: 28%;
+    }
+    .kanan .bagianinput input{
+        font-size: 18px;
+    }
+    .kanan .login {
+        padding-top: 20px;
+        margin: 20px 0;
+    }
+    .kanan .remember{
+        font-size: 14px;
+    }
+    .kanan .remember span {
+        font-size: 14px;
+    }
+    .kanan .akun div img{
+        width: 30%;
+        height: 5.7vw;
+    }
+    .kanan .google:hover {
+        background-color: antiquewhite;
+    }
+    .kanan .facebook:hover {
+        background-color: antiquewhite;
+    }
+}
+
+@media (max-width: 480px) {
+    .kanan{
+        width: 90%;
+        padding: 20px 5%;
+    }
+    .kanan .remember{
+        font-size: 12px;
+    }
+    .kanan .remember span {
+        font-size: 12px;
+    }
+    .kanan .akun div img{
+        height: 6vw;
+    }
+    .kanan .bagianinput input{
+        font-size: 14px;
+    }
+    .kanan .google{
+        margin-right: 20px;
+        height: 40px;
+        width: 20%;
+    }
+    .akun .facebook {
+        height: 40px;
+        width: 20%;
+    }
+}
